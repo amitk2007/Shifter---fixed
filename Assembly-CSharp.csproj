@@ -47,14 +47,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Main And End Game\Menu.cs" />
-     <Compile Include="Assets\Main And End Game\not used\MaintManue.cs" />
      <Compile Include="Assets\MainGame\TouchScript.cs" />
      <Compile Include="Assets\MainGame\obstacleScript.cs" />
      <Compile Include="Assets\MainGame\playerScript.cs" />
      <Compile Include="Assets\MainGame\setUps.cs" />
      <Compile Include="Assets\MainGame\tryscript.cs" />
-     <Compile Include="Assets\extra\gg.cs" />
-     <Compile Include="Assets\extra\playerControl.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
