@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Main And End Game\Menu.cs" />
+     <Compile Include="Assets\Main And End Game\PlayerHightScore.cs" />
      <Compile Include="Assets\MainGame\TouchScript.cs" />
      <Compile Include="Assets\MainGame\obstacleScript.cs" />
      <Compile Include="Assets\MainGame\playerScript.cs" />

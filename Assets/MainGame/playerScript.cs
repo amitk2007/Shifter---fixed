@@ -18,8 +18,8 @@ public class playerScript : MonoBehaviour
 	void OnGUI () 
 	{
 		GUI.skin = theSkin;
-		theSkin.label.fontSize =  Screen.height/(15/2);
-		GUI.Label (new Rect (Screen.width/10, 25, 100, 100), ""+ playerScore);
+		theSkin.label.fontSize =  Screen.height/8;
+		GUI.Label (new Rect (Screen.width/10, 25, Screen.width/4, Screen.height/5), ""+ playerScore);
 	}
 
 
