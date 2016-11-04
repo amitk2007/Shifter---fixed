@@ -3,6 +3,7 @@ using System.Collections;
 
 public class obstacleScript : MonoBehaviour
 {
+	public Sprite[] BreakSprits = new Sprite[11]; 
 	float playerSpeed = 0.05f;
     public Sprite[] obstacleSprites = new Sprite[4];
 	public Sprite obstacleBreakSprites;
@@ -15,6 +16,10 @@ public class obstacleScript : MonoBehaviour
     bool addMorePoints = false;
     string[] playersSkinsNames = new string[4] { "first", "second", "third", "forth" };
 
+	//break
+	bool breaking =false;
+	float timer;
+	//End break
     void Start()
     {
 		ReStartObstacle ();
@@ -34,7 +39,9 @@ public class obstacleScript : MonoBehaviour
 			string playerSpriteName = player.gameObject.GetComponent<SpriteRenderer> ().sprite.name;
 			if (playerSpriteName.Equals(playersSkinsNames[obstacleSpriteNumber]))
 			{
-                addMorePoints = true;
+				player.SendMessage("AddOneToPlayerScore");
+				points++;
+				obstacleBreak();
 			}
 			else
 			{
@@ -45,15 +52,10 @@ public class obstacleScript : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (addMorePoints)
-        {
-			player.SendMessage("AddOneToPlayerScore");
-			points++;
-			obstacleBreak();
-        }
-		ReStartObstacle();
-        addMorePoints = false;
-    	}
+		if (breaking == false) {
+			ReStartObstacle();
+		}
+    }
 
     void RandomObstacleCalor()
     {
@@ -76,6 +78,12 @@ public class obstacleScript : MonoBehaviour
 
 	void obstacleBreak()
 	{
-		gameObject.GetComponent<SpriteRenderer> ().sprite = obstacleBreakSprites;
+		timer = Time.time;
+		breaking= true;
+		breaking = false;
+		/*for (int i = 0; i < 11; i++) {
+			gameObject.GetComponent<SpriteRenderer>().sprite = BreakSprits[i];
+			System.Threading.Thread.Sleep(100);
+		}*/
 	}
 }

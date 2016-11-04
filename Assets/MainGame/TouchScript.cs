@@ -22,9 +22,6 @@ public class TouchScript : MonoBehaviour {
 	void ChangePlayerSprite()
 	{
 		playerScript.SpriteNumber = playerScript.AddOneLoop (playerScript.SpriteNumber);
-		Debug.Log (player.gameObject.GetComponent<SpriteRenderer> ().sprite);
-		Debug.Log (playerScript.SpriteNumber);
-		Debug.Log (playerScript.SpritsArray [playerScript.SpriteNumber]);
 		player.gameObject.GetComponent<SpriteRenderer>().sprite = playerScript.SpritsArray[playerScript.SpriteNumber];
 	}
 }

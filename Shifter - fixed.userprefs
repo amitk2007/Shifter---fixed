@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\Hello phone\Assets\TouchScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Main And End Game\PlayerHightScore.cs">
     <Files>
-      <File FileName="..\Hello phone\Assets\MoveScript.cs" Line="1" Column="1" />
-      <File FileName="..\Hello phone\Assets\TouchScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\MainGame\playerScript.cs" Line="21" Column="44" />
+      <File FileName="Assets\Main And End Game\Menu.cs" Line="4" Column="17" />
+      <File FileName="Assets\Main And End Game\PlayerHightScore.cs" Line="27" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
