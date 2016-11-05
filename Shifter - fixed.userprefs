@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Main And End Game\PlayerHightScore.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MainGame\playerScript.cs">
     <Files>
-      <File FileName="Assets\MainGame\playerScript.cs" Line="21" Column="44" />
-      <File FileName="Assets\Main And End Game\Menu.cs" Line="4" Column="17" />
-      <File FileName="Assets\Main And End Game\PlayerHightScore.cs" Line="27" Column="1" />
+      <File FileName="Assets\MainGame\playerScript.cs" Line="10" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
