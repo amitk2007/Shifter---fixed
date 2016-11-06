@@ -28,6 +28,11 @@ public class Menu : MonoBehaviour {
 		Application.LoadLevel("game");
 	}
 
+	public void HowToPlay()
+	{
+		Application.LoadLevel("HowToPlay");
+	}
+
 	public void Exit()
 	{
 		Application.Quit ();
