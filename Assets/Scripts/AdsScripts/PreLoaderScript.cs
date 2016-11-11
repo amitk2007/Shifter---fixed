@@ -7,7 +7,7 @@ public class PreLoaderScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        Application.LoadLevel("EndGame 1");
+        Application.LoadLevel("menu");
     }
 
     // Update is called once per frame
