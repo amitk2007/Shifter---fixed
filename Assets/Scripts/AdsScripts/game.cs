@@ -18,9 +18,7 @@ public class game : MonoBehaviour
         if (shown == false)
         {
             ShowInterstitial();
-
         }
-
     }
 
     public void ShowInterstitial()

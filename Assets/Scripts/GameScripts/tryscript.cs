@@ -12,12 +12,11 @@ public class tryscript : MonoBehaviour
     {
         obj.GetChild(0).position = new Vector3(4, 3, 0);
         obj.GetChild(1).position = new Vector3(-4, 3, 0);
+        AdManager.Instance.ShowBanner();
     }
 
     void Update()
     {
-        AdManager.Instance.ShowBanner();
-
         if (isVideoReady == false)
         {
             isVideoReady = AdManager.Instance.LoadVidoe();
