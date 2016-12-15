@@ -9,8 +9,11 @@ public class Menu : MonoBehaviour {
 	public GameObject PointsText;
 	// Use this for initialization
 	void Start () {
-		PointsText.GetComponent<Text> ().text = playerScript.playerScore.ToString();
-	}
+        if (PointsText!=null)
+        {
+            PointsText.GetComponent<Text>().text = playerScript.playerScore.ToString();
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -32,6 +35,10 @@ public class Menu : MonoBehaviour {
 	{
 		Application.LoadLevel("HowToPlay");
 	}
+    public void OpenSetting()
+    {
+        Application.LoadLevel("Settings");
+    }
 
 	public void Exit()
 	{

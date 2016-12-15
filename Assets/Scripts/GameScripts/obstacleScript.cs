@@ -4,10 +4,10 @@ using System.Collections;
 public class obstacleScript : MonoBehaviour
 {
     #region variables
-    public Sprite[] BreakSprits = new Sprite[11];
+    //public Sprite[] BreakSprits = new Sprite[11];
     float playerSpeed = 0.05f;
     public Sprite[] obstacleSprites = new Sprite[4];
-    public Sprite obstacleBreakSprites;
+    //public Sprite obstacleBreakSprites;
     public Color[] obstacleColor = new Color[4];
     public Transform player;
     public Transform obstacle;
