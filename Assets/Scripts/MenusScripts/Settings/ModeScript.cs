@@ -39,7 +39,7 @@ public class ModeScript : MonoBehaviour {
     }
     public void ApplyMode()
     {
-        Application.LoadLevel("game");
+        Application.LoadLevel("menu");
         ModeName = modes[modeIndex];
     }
 

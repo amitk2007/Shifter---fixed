@@ -65,6 +65,7 @@ public class obstacleScript : MonoBehaviour
 
     void RandomObstacleCalor()
     {
+        print("randome");
         obstacleSpriteNumber = Random.Range(0, 4);//0 or 1 or 2 or 3
         gameObject.GetComponent<SpriteRenderer>().sprite = obstacleSprites[obstacleSpriteNumber];
         gameObject.GetComponent<SpriteRenderer>().color = Color.white;
