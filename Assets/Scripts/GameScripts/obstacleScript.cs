@@ -29,7 +29,7 @@ public class obstacleScript : MonoBehaviour
 
     void Update()
     {
-        playerSpeed = 0.05f + ((points / 2) / 100);
+        playerSpeed = 0.05f + Mathf.Sqrt(points)/100;
         transform.Translate(Vector3.down * playerSpeed);
     }
 

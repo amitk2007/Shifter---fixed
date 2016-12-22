@@ -14,7 +14,6 @@ public class Holders : MonoBehaviour
         Sound = (GetInt("Sound",1)==1);
         Music = (GetInt("Music",1)==1);
         CorrendTextureMode = GetString("TextureMode", "Classic");
-        print(CorrendTextureMode);
         MenuType = GetString("MenuType", "Animated");
         ChangeMenus(MenuType);
     }
@@ -28,15 +27,15 @@ public class Holders : MonoBehaviour
     #region Get (Int/Float/String)
     public static float GetFloat(string name,float defaultVlaue)
     {
-        return PlayerPrefs.GetFloat("name",defaultVlaue);
+        return PlayerPrefs.GetFloat(name,defaultVlaue);
     }
     public static int GetInt(string name,int defaultVlaue)
     {
-        return PlayerPrefs.GetInt("name", defaultVlaue);
+        return PlayerPrefs.GetInt(name, defaultVlaue);
     }
     public static string GetString(string name,string defaultVlaue)
     {
-        return PlayerPrefs.GetString("name", defaultVlaue);
+        return PlayerPrefs.GetString(name, defaultVlaue);
     }
     #endregion
 
