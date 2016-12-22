@@ -16,7 +16,7 @@ public class playerScript : MonoBehaviour
     void Start()
     {
         SpritsArray = playerSprits;
-        this.gameObject.GetComponent<SpriteRenderer>().sprite = SpritsArray[SpriteNumber];
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = SpritsArray[0];
     }
 
     void OnGUI()

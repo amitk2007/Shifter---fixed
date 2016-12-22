@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
-//
 using UnityEngine.UI;
-//
+
+//********************************
+//for the normal non animated menu
+//********************************
 
 public class Menu : MonoBehaviour {
 	
@@ -19,18 +21,17 @@ public class Menu : MonoBehaviour {
 	void Update () {
 	}
 
-	public void ButtonMainMenu()
+    #region Buttons
+    public void ButtonMainMenu()
 	{
 		Application.LoadLevel ("menu");
 	}
-
 	public void PlayGame()//ButtonTryAgain + ButtonStartGame
 	{
 		Application.LoadLevel ("menu");
 		playerScript.playerScore = 0;
 		Application.LoadLevel("game");
 	}
-
 	public void HowToPlay()
 	{
 		Application.LoadLevel("HowToPlay");
@@ -39,9 +40,9 @@ public class Menu : MonoBehaviour {
     {
         Application.LoadLevel("Settings");
     }
-
 	public void Exit()
 	{
 		Application.Quit ();
 	}
+    #endregion
 }

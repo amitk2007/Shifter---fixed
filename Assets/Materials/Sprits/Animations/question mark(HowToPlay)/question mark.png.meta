@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 791a017ebdc25114ba733ea5bfe5798b
+timeCreated: 1481902009
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: question mark_0
+    21300002: question mark_1
+    21300004: question mark_2
+    21300006: question mark_3
+    21300008: question mark_4
+    21300010: question mark_5
+    21300012: question mark_6
+    21300014: question mark_7
+    21300016: question mark_8
+    21300018: question mark_9
+    21300020: question mark_10
+    21300022: question mark_11
+    21300024: question mark_12
+    21300026: question mark_13
+    21300028: question mark_14
+    21300030: question mark_15
+    21300032: question mark_16
+    21300034: question mark_17
+    21300036: question mark_18
+    21300038: question mark_19
+    21300040: question mark_20
+    21300042: question mark_21
+    21300044: question mark_22
+    21300046: question mark_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: question mark_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 717
+        width: 235
+        height: 311
+      alignment: 9
+      pivot: {x: .351845652, y: .27720952}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 725
+        width: 283
+        height: 287
+      alignment: 9
+      pivot: {x: .423702717, y: .23338227}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_2
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 700
+        width: 243
+        height: 309
+      alignment: 9
+      pivot: {x: .389319152, y: .278108954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_3
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 726
+        width: 239
+        height: 287
+      alignment: 9
+      pivot: {x: .363692403, y: .200385004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_4
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 730
+        width: 226
+        height: 278
+      alignment: 9
+      pivot: {x: .35585171, y: .178421572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_5
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 699
+        width: 167
+        height: 308
+      alignment: 9
+      pivot: {x: .250485361, y: .231882274}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_6
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 706
+        width: 201
+        height: 288
+      alignment: 9
+      pivot: {x: .279499114, y: .259298742}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_7
+      rect:
+        serializedVersion: 2
+        x: 1987
+        y: 711
+        width: 154
+        height: 290
+      alignment: 9
+      pivot: {x: .295836598, y: .23483403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_8
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 709
+        width: 193
+        height: 230
+      alignment: 9
+      pivot: {x: .317465037, y: .304007888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_9
+      rect:
+        serializedVersion: 2
+        x: 2492
+        y: 712
+        width: 109
+        height: 211
+      alignment: 9
+      pivot: {x: .173319682, y: .318674684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_10
+      rect:
+        serializedVersion: 2
+        x: 2662
+        y: 699
+        width: 110
+        height: 192
+      alignment: 9
+      pivot: {x: .345032841, y: .37964949}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_11
+      rect:
+        serializedVersion: 2
+        x: 2803
+        y: 680
+        width: 114
+        height: 131
+      alignment: 9
+      pivot: {x: .187647775, y: .641691506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_12
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 278
+        width: 107
+        height: 145
+      alignment: 9
+      pivot: {x: .186696842, y: .620537937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_13
+      rect:
+        serializedVersion: 2
+        x: 2652
+        y: 292
+        width: 113
+        height: 192
+      alignment: 9
+      pivot: {x: .342792869, y: .438815117}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_14
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 312
+        width: 143
+        height: 216
+      alignment: 9
+      pivot: {x: .323942184, y: .334366679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_15
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 303
+        width: 167
+        height: 270
+      alignment: 9
+      pivot: {x: .360136658, y: .301816702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_16
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 320
+        width: 178
+        height: 278
+      alignment: 9
+      pivot: {x: .229208276, y: .231138706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_17
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 303
+        width: 190
+        height: 330
+      alignment: 9
+      pivot: {x: .266426802, y: .247766674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_18
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 287
+        width: 217
+        height: 335
+      alignment: 9
+      pivot: {x: .358964354, y: .261541933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_19
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 289
+        width: 177
+        height: 350
+      alignment: 9
+      pivot: {x: .302181274, y: .273243576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_20
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 267
+        width: 216
+        height: 373
+      alignment: 9
+      pivot: {x: .329493195, y: .326164931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_21
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 289
+        width: 241
+        height: 347
+      alignment: 9
+      pivot: {x: .440809309, y: .293706357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_22
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 282
+        width: 261
+        height: 392
+      alignment: 9
+      pivot: {x: .412806243, y: .290791422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question mark_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 279
+        width: 256
+        height: 386
+      alignment: 9
+      pivot: {x: .405232131, y: .33436054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

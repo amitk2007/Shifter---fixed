@@ -4,23 +4,23 @@ using System.Collections;
 public class obstacleScript : MonoBehaviour
 {
     #region variables
-    //public Sprite[] BreakSprits = new Sprite[11];
-    float playerSpeed = 0.05f;
-    public Sprite[] obstacleSprites = new Sprite[4];
-    //public Sprite obstacleBreakSprites;
-    public Color[] obstacleColor = new Color[4];
+
+    #region game objects
     public Transform player;
     public Transform obstacle;
     public Camera mainCam;
+    #endregion
+    #region numbers
+    float playerSpeed = 0.05f;
     int obstacleSpriteNumber;
     float points = 0;
-    bool addMorePoints = false;
+    #endregion
+    #region arrays
+    public Sprite[] obstacleSprites = new Sprite[4];
+    public Color[] obstacleColor = new Color[4];
     string[] playersSkinsNames = new string[4] { "first", "second", "third", "forth" };
+    #endregion
 
-    //break
-    bool breaking = false;
-    float timer;
-    //End break
     #endregion
 
     void Start()
@@ -57,15 +57,11 @@ public class obstacleScript : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (breaking == false)
-        {
-            ReStartObstacle();
-        }
+        ReStartObstacle();
     }
 
     void RandomObstacleCalor()
     {
-        print("randome");
         obstacleSpriteNumber = Random.Range(0, 4);//0 or 1 or 2 or 3
         gameObject.GetComponent<SpriteRenderer>().sprite = obstacleSprites[obstacleSpriteNumber];
         gameObject.GetComponent<SpriteRenderer>().color = Color.white;
@@ -85,12 +81,6 @@ public class obstacleScript : MonoBehaviour
 
     void obstacleBreak()
     {
-        timer = Time.time;
-        breaking = true;
-        breaking = false;
-        /*for (int i = 0; i < 11; i++) {
-			gameObject.GetComponent<SpriteRenderer>().sprite = BreakSprits[i];
-			System.Threading.Thread.Sleep(100);
-		}*/
+
     }
 }
