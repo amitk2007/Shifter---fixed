@@ -4,7 +4,6 @@ using System.Collections;
 public class obstacleScript : MonoBehaviour
 {
     #region variables
-
     #region game objects
     public Transform player;
     public Transform obstacle;
@@ -20,7 +19,6 @@ public class obstacleScript : MonoBehaviour
     public Color[] obstacleColor = new Color[4];
     string[] playersSkinsNames = new string[4] { "first", "second", "third", "forth" };
     #endregion
-
     #endregion
 
     void Start()
@@ -57,7 +55,7 @@ public class obstacleScript : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        ReStartObstacle();
+            ReStartObstacle();
     }
 
     void RandomObstacleCalor()
@@ -81,6 +79,6 @@ public class obstacleScript : MonoBehaviour
 
     void obstacleBreak()
     {
-
+    
     }
 }

@@ -7,6 +7,7 @@ public class PreLoaderScript : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Holders.CorrendTextureMode = Holders.GetString("TextureMode", "Classic");
         Application.LoadLevel("menu");
     }
 
