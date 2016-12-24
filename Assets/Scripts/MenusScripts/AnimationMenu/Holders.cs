@@ -4,20 +4,18 @@ using System.Collections;
 public class Holders : MonoBehaviour
 {
     public static string MenuType;//"Animated" or "NotAnimated"
-    public static bool Sound; //have (true) or don't have (false)
-    public static bool Music; //have (true) or don't have (false)
     public static string CorrendTextureMode; //"Classic" or "Brick" or "Rainbow"
     public static string[] Menus = new string[5];
 
     //music and sounds
-    public static bool IsMusicEnable = true;
-    public static bool IsSoundEnable = true;
+    public static bool IsMusicEnable = true; //have (true) or don't have (false)
+    public static bool IsSoundEnable = true; //have (true) or don't have (false)
 
     // Use this for initialization
     void Start()
     {
-        Sound = BoolFromString(GetString("SoundEnable", "true"));
-        Music = BoolFromString(GetString("MusicEnable", "true"));
+        IsSoundEnable = BoolFromString(GetString("SoundEnable", "true"));
+        IsMusicEnable = BoolFromString(GetString("MusicEnable", "true"));
         CorrendTextureMode = GetString("TextureMode", "Classic");
         MenuType = GetString("MenuType", "Animated");
         ChangeMenus(MenuType);

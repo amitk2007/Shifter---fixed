@@ -4,11 +4,11 @@ using UnityEngine.UI;
 
 public class SettingScript : MonoBehaviour {
 
-    public GameObject[] SoundAndMusic  = new GameObject[2];
+    public GameObject[] MusicAndSound  = new GameObject[2];
 	// Use this for initialization
 	void Start () {
-        SoundAndMusic[0].GetComponent<Toggle>().isOn = Holders.IsMusicEnable;
-        SoundAndMusic[1].GetComponent<Toggle>().isOn = Holders.IsSoundEnable;
+        MusicAndSound[0].GetComponent<Toggle>().isOn = Holders.IsMusicEnable;
+        MusicAndSound[1].GetComponent<Toggle>().isOn = Holders.IsSoundEnable;
 	}
 	
 	// Update is called once per frame
