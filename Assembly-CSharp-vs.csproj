@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\MenusScripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\PlayerHightScore.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\Settings\ModeScript.cs" />
+     <Compile Include="Assets\Scripts\MenusScripts\Settings\SettingScript.cs" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

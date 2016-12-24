@@ -14,6 +14,12 @@ public class setUps : MonoBehaviour
     void Start()
     {
         player.position = new Vector2(mainCam.ScreenToWorldPoint(new Vector3(Screen.width / 2, 0f, 0f)).x, mainCam.ScreenToWorldPoint(new Vector3(0f, Screen.height - 7 * (Screen.height / 8), 0f)).y + 0f);
+
+        #region Music and Sounds
+        this.gameObject.GetComponent<AudioSource>().enabled = Holders.IsMusicEnable;
+        player.gameObject.GetComponent<AudioSource>().enabled = Holders.IsSoundEnable;
+        #endregion
+
     }
 
     // Update is called once per frame

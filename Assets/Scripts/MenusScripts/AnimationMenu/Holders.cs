@@ -8,11 +8,16 @@ public class Holders : MonoBehaviour
     public static bool Music; //have (true) or don't have (false)
     public static string CorrendTextureMode; //"Classic" or "Brick" or "Rainbow"
     public static string[] Menus = new string[5];
+
+    //music and sounds
+    public static bool IsMusicEnable = true;
+    public static bool IsSoundEnable = true;
+
     // Use this for initialization
     void Start()
     {
-        Sound = (GetInt("Sound",1)==1);
-        Music = (GetInt("Music",1)==1);
+        Sound = BoolFromString(GetString("SoundEnable", "true"));
+        Music = BoolFromString(GetString("MusicEnable", "true"));
         CorrendTextureMode = GetString("TextureMode", "Classic");
         MenuType = GetString("MenuType", "Animated");
         ChangeMenus(MenuType);
@@ -67,6 +72,17 @@ public class Holders : MonoBehaviour
         else
         {
             ChangeMenus("Animated");
+        }
+    }
+    public static bool BoolFromString(string str)
+    {
+        if (str == "true")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
         }
     }
 }
