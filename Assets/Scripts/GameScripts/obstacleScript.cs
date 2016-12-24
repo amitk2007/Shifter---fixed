@@ -79,6 +79,6 @@ public class obstacleScript : MonoBehaviour
 
     void obstacleBreak()
     {
-    
+        player.gameObject.GetComponent<AudioSource>().Play();
     }
 }
