@@ -4,7 +4,6 @@ using UnityEngine.UI;
 
 public class PlayerHightScore : MonoBehaviour {
 
-	public static int highscore;
 	public static int score;
 	public GameObject HighPointsText;
 	public GameObject NewBest;
@@ -13,17 +12,17 @@ public class PlayerHightScore : MonoBehaviour {
 
 		score = playerScript.playerScore;
 		
-		highscore = PlayerPrefs.GetInt ("highscore", highscore);
+		Holders.HightScore = Holders.GetInt ("highscore", 0);
 
-		if (highscore < score) {
+		if (Holders.HightScore < score) {
 			NewBest.GetComponent<Text> ().enabled = true;
 		} else {
 			NewBest.GetComponent<Text>().enabled = false;
 		}
 
-		highscore = Mathf.Max(highscore,score);
-		PlayerPrefs.SetInt ("highscore",highscore);
-		HighPointsText.GetComponent<Text> ().text = highscore.ToString();
+		Holders.HightScore = Mathf.Max(Holders.HightScore,score);
+		Holders.SaveInt ("highscore",Holders.HightScore);
+		HighPointsText.GetComponent<Text> ().text = Holders.HightScore.ToString();
 	}
 	
 	// Update is called once per frame

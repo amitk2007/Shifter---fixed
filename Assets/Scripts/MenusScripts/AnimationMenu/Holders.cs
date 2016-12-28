@@ -6,6 +6,7 @@ public class Holders : MonoBehaviour
     public static string MenuType;//"Animated" or "NotAnimated"
     public static string CorrendTextureMode; //"Classic" or "Brick" or "Rainbow"
     public static string[] Menus = new string[5];
+    public static int HightScore;
 
     //music and sounds
     public static bool IsMusicEnable = true; //have (true) or don't have (false)

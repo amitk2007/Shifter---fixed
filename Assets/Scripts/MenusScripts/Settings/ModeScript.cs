@@ -10,6 +10,11 @@ public class ModeScript : MonoBehaviour
     int modeIndex = 0;
     public GameObject modeText;
 
+    //ModesLock stuff
+    public GameObject LockModeText;
+    public GameObject ModeApplayButton;
+    public int[] ModeLockScores;
+
     // Use this for initialization
     void Start()
     {
@@ -32,6 +37,8 @@ public class ModeScript : MonoBehaviour
             modeIndex = 0;
         }
         showTextOnScreen(modeText, modes[modeIndex]);
+
+        LockMode();
     }
     public void previousMode()
     {
@@ -41,6 +48,8 @@ public class ModeScript : MonoBehaviour
             modeIndex = modes.Length - 1;
         }
         showTextOnScreen(modeText, modes[modeIndex]);
+
+        LockMode();
     }
     public void ApplyMode()
     {
@@ -65,5 +74,19 @@ public class ModeScript : MonoBehaviour
     void showTextOnScreen(GameObject place, string textToShow)
     {
         place.GetComponent<Text>().text = textToShow;
+    }
+
+    void LockMode()
+    {
+        if (Holders.HightScore < ModeLockScores[modeIndex]) 
+        {
+            showTextOnScreen(LockModeText, "You need to get More then "+ ModeLockScores[modeIndex].ToString()+" to get this mode");
+            ModeApplayButton.GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            showTextOnScreen(LockModeText, "");
+            ModeApplayButton.GetComponent<Button>().interactable = true;
+        }
     }
 }
