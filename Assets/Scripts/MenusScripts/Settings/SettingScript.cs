@@ -7,8 +7,8 @@ public class SettingScript : MonoBehaviour {
     public GameObject[] MusicAndSound  = new GameObject[2];
 	// Use this for initialization
 	void Start () {
-        Holders.IsSoundEnable = Holders.BoolFromString(Holders.GetString("SoundEnable", "true"));
-        Holders.IsMusicEnable = Holders.BoolFromString(Holders.GetString("MusicEnable", "true"));
+        Holders.IsSoundEnable = Holders.BoolFromString(Holders.GetString("SoundEnable", "True"));
+        Holders.IsMusicEnable = Holders.BoolFromString(Holders.GetString("MusicEnable", "True"));
         MusicAndSound[0].GetComponent<Toggle>().isOn = Holders.IsMusicEnable;
         MusicAndSound[1].GetComponent<Toggle>().isOn = Holders.IsSoundEnable;
 	}
@@ -20,12 +20,18 @@ public class SettingScript : MonoBehaviour {
 
     public void MusicToggleIsChanged()
     {
-        Holders.IsMusicEnable = !Holders.IsMusicEnable;
+        if (MusicAndSound[0].GetComponent<Toggle>().isOn != Holders.IsMusicEnable)
+        {
+            Holders.IsMusicEnable = !Holders.IsMusicEnable;
+        }
         Holders.SaveString("MusicEnable", Holders.IsMusicEnable.ToString());
     }
     public void SoundToggleIsChanged()
     {
-        Holders.IsSoundEnable = !Holders.IsSoundEnable;
+        if (MusicAndSound[1].GetComponent<Toggle>().isOn != Holders.IsSoundEnable)
+        {
+            Holders.IsSoundEnable = !Holders.IsSoundEnable;
+        }
         Holders.SaveString("SoundEnable", Holders.IsSoundEnable.ToString());
     }
 }

@@ -15,8 +15,8 @@ public class Holders : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        IsSoundEnable = BoolFromString(GetString("SoundEnable", "true"));
-        IsMusicEnable = BoolFromString(GetString("MusicEnable", "true"));
+        IsSoundEnable = BoolFromString(GetString("SoundEnable", "True"));
+        IsMusicEnable = BoolFromString(GetString("MusicEnable", "True"));
         CorrendTextureMode = GetString("TextureMode", "Classic");
         MenuType = GetString("MenuType", "Animated");
         ChangeMenus(MenuType);
