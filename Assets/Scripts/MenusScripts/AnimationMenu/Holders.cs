@@ -75,7 +75,7 @@ public class Holders : MonoBehaviour
     }
     public static bool BoolFromString(string str)
     {
-        if (str == "true")
+        if (str == "True")
         {
             return true;
         }
