@@ -5,7 +5,7 @@ public class game : MonoBehaviour
 {
     bool shown = false;
     public GameObject player;
-    Vector3 pozition = new Vector3(1, 1, 1);
+   // Vector3 pozition = new Vector3(1, 1, 1);
     // Use this for initialization
     void Start()
     {

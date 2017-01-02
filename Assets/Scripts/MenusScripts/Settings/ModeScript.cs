@@ -5,15 +5,15 @@ using UnityEngine.UI;
 public class ModeScript : MonoBehaviour
 {
 
-    public static string ModeName;
-    public string[] modes;
-    int modeIndex = 0;
+    public string ModeName;
+    public static string[] modes = new string[3] { "Classic", "OutLine", "8Bit" };
+    public int modeIndex = 0;
     public GameObject modeText;
 
     //ModesLock stuff
     public GameObject LockModeText;
     public GameObject ModeApplayButton;
-    public int[] ModeLockScores;
+    public static int[] ModeLockScores = new int[3] { 0, 10, 20 };
 
     // Use this for initialization
     void Start()
@@ -29,7 +29,7 @@ public class ModeScript : MonoBehaviour
     }
 
     #region Buttons
-    public void nextMode()
+    void nextMode()
     {
         modeIndex++;
         if (modeIndex == modes.Length)
@@ -40,7 +40,7 @@ public class ModeScript : MonoBehaviour
 
         LockMode();
     }
-    public void previousMode()
+    void previousMode()
     {
         modeIndex--;
         if (modeIndex == -1)
@@ -51,9 +51,9 @@ public class ModeScript : MonoBehaviour
 
         LockMode();
     }
-    public void ApplyMode()
+    void ApplyMode()
     {
-        Application.LoadLevel("menu");
+        Application.LoadLevel(Holders.Menus[0]);
         ModeName = modes[modeIndex];
         Holders.SaveString("TextureMode", ModeName);
         Holders.CorrendTextureMode = ModeName;

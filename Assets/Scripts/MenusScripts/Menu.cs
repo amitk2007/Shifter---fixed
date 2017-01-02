@@ -21,23 +21,23 @@ public class Menu : MonoBehaviour {
 
 	public void ButtonMainMenu()
 	{
-		Application.LoadLevel ("menu");
+		Application.LoadLevel (Holders.Menus[0]);
 	}
 
 	public void PlayGame()//ButtonTryAgain + ButtonStartGame
 	{
-		Application.LoadLevel ("menu");
+		Application.LoadLevel (Holders.Menus[0]);
 		playerScript.playerScore = 0;
-		Application.LoadLevel("game");
+		Application.LoadLevel(Holders.Menus[1]);
 	}
 
 	public void HowToPlay()
 	{
-		Application.LoadLevel("HowToPlay");
+		Application.LoadLevel(Holders.Menus[2]);
 	}
     public void OpenSetting()
     {
-        Application.LoadLevel("Settings");
+        Application.LoadLevel(Holders.Menus[3]);
     }
 
 	public void Exit()

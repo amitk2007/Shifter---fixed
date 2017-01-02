@@ -30,6 +30,6 @@ public class EndGame : MonoBehaviour
 
     public void StartGame()
     {
-        Application.LoadLevel("MainGame");
+        Application.LoadLevel(Holders.Menus[1]);
     }
 }

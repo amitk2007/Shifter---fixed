@@ -20,13 +20,13 @@ public class Acrive : MonoBehaviour
         switch (this.gameObject.name)
         {
             case "Play":
-                Application.LoadLevel("game");
+                Application.LoadLevel(Holders.Menus[1]);
                 break;
             case "Settings":
-                Application.LoadLevel("Settings");
+                Application.LoadLevel(Holders.Menus[3]);
                 break;
             case "HowToPlay":
-                Application.LoadLevel("HowToPlay");
+                Application.LoadLevel(Holders.Menus[2]);
                 break;
 
             default:

@@ -58,6 +58,8 @@
      <Compile Include="Assets\Scripts\GameScripts\setUps.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\AnimationMenu\Acrive.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\AnimationMenu\Holders.cs" />
+     <Compile Include="Assets\Scripts\MenusScripts\AnimationMenu\ModeTextScript.cs" />
+     <Compile Include="Assets\Scripts\MenusScripts\AnimationMenu\OnClick.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\PlayerHightScore.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\Settings\ModeScript.cs" />

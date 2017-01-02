@@ -2,21 +2,24 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class SettingScript : MonoBehaviour {
+public class SettingScript : MonoBehaviour
+{
 
-    public GameObject[] MusicAndSound  = new GameObject[2];
-	// Use this for initialization
-	void Start () {
+    public GameObject[] MusicAndSound = new GameObject[2];
+    // Use this for initialization
+    void Start()
+    {
         Holders.IsSoundEnable = Holders.BoolFromString(Holders.GetString("SoundEnable", "True"));
         Holders.IsMusicEnable = Holders.BoolFromString(Holders.GetString("MusicEnable", "True"));
         MusicAndSound[0].GetComponent<Toggle>().isOn = Holders.IsMusicEnable;
         MusicAndSound[1].GetComponent<Toggle>().isOn = Holders.IsSoundEnable;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     public void MusicToggleIsChanged()
     {
@@ -33,5 +36,11 @@ public class SettingScript : MonoBehaviour {
             Holders.IsSoundEnable = !Holders.IsSoundEnable;
         }
         Holders.SaveString("SoundEnable", Holders.IsSoundEnable.ToString());
+    }
+
+    public void ChangeMenus()
+    {
+        Holders.Menus = new string[5] { "AMenu", "Game", "AHowToPlay", "ASettings", "AEndGame" };
+        Application.LoadLevel(Holders.Menus[3]);
     }
 }

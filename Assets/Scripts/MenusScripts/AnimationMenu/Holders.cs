@@ -3,21 +3,28 @@ using System.Collections;
 
 public class Holders : MonoBehaviour
 {
+    #region Menus
     public static string MenuType;//"Animated" or "NotAnimated"
     public static string CorrendTextureMode; //"Classic" or "Brick" or "Rainbow"
-    public static string[] Menus = new string[5];
+    public static string[] Menus = new string[5] { "AMenu", "Game", "AHowToPlay", "ASettings", "AEndGame" };
     public static int HightScore;
-
+    #endregion
+    #region Music and Sound
     //music and sounds
     public static bool IsMusicEnable = true; //have (true) or don't have (false)
     public static bool IsSoundEnable = true; //have (true) or don't have (false)
-
+    #endregion
+    
     // Use this for initialization
     void Start()
     {
+        //mods
+        //SaveInt("ModeInt", 0);
+        CorrendTextureMode = GetString("TextureMode", "Classic");
+        //audio
         IsSoundEnable = BoolFromString(GetString("SoundEnable", "True"));
         IsMusicEnable = BoolFromString(GetString("MusicEnable", "True"));
-        CorrendTextureMode = GetString("TextureMode", "Classic");
+        //menus
         MenuType = GetString("MenuType", "Animated");
         ChangeMenus(MenuType);
     }
@@ -60,13 +67,14 @@ public class Holders : MonoBehaviour
 
     public static void ChangeMenus(string menuType)
     {
+        print("ok");
         if (menuType == "Animated")
         {
-            Menus = new string[4] { "AMenu", "Game", "AHowToPlay", "ASettings" };
+            Menus = new string[5] { "AMenu", "Game", "AHowToPlay", "ASettings" ,"AEndGame"};
         }
         if (menuType == "NotAnimated")
         {
-            Menus = new string[4] { "Menu", "Game", "HowToPlay", "ASettings" };
+            Menus = new string[5] { "Menu", "Game", "HowToPlay", "ASettings" ,"EndGame"};
         }
         else
         {
