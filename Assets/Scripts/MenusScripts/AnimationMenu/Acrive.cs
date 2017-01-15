@@ -3,11 +3,26 @@ using System.Collections;
 
 public class Acrive : MonoBehaviour
 {
+    public Camera cam;
 
     // Use this for initialization
     void Start()
     {
+        switch (this.gameObject.name)
+        {
+            case "Play":
+                this.gameObject.transform.position = cam.ScreenToWorldPoint(new Vector3(Screen.width/4, Screen.height/2, 10));
+                break;
+            case "Settings":
+                this.gameObject.transform.position = cam.ScreenToWorldPoint(new Vector3(50, Screen.height - 60, 10));
+                break;
+            case "HowToPlay":
+                this.gameObject.transform.position = cam.ScreenToWorldPoint(new Vector3(Screen.width-40, Screen.height - 60, 10));
+                break;
 
+            default:
+                break;
+        }
     }
 
     // Update is called once per frame

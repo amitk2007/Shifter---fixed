@@ -8,7 +8,19 @@ public class OnClick : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
+        switch (this.gameObject.name)
+        {
+            case "Music":
+                slash = this.gameObject.transform.GetChild(0).gameObject;
+                slash.SetActive(Holders.IsMusicEnable);
+                break;
+            case "Sound":
+                slash = this.gameObject.transform.GetChild(0).gameObject;
+                slash.SetActive(Holders.IsSoundEnable);
+                break;
+            default:
+                break;
+        }
     }
 
     // Update is called once per frame

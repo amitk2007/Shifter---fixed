@@ -15,6 +15,7 @@ public class playerScript : MonoBehaviour
 
     void Start()
     {
+        points = 0;
         SpritsArray = playerSprits;
         this.gameObject.GetComponent<SpriteRenderer>().sprite = SpritsArray[0];
     }
@@ -50,15 +51,15 @@ public class playerScript : MonoBehaviour
     //GUI
     public int GUISizeByScore(int score)
     {
-        if (score<=11)
-        {
+        //if (score<=11)
+        //{
             return Screen.height/8;
-        }
-        if (score>=100)
-        {
-            return 20;
-        }
-        return 30;
+        //}
+        //if (score>=100)
+        //{
+        //    return 20;
+        //}
+        //return 30;
     }
     #endregion
 }
