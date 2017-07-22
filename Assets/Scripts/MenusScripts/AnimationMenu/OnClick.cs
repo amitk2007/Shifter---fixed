@@ -12,11 +12,11 @@ public class OnClick : MonoBehaviour
         {
             case "Music":
                 slash = this.gameObject.transform.GetChild(0).gameObject;
-                slash.SetActive(Holders.IsMusicEnable);
+                slash.SetActive(!Holders.IsMusicEnable);
                 break;
             case "Sound":
                 slash = this.gameObject.transform.GetChild(0).gameObject;
-                slash.SetActive(Holders.IsSoundEnable);
+                slash.SetActive(!Holders.IsSoundEnable);
                 break;
             default:
                 break;
@@ -37,14 +37,14 @@ public class OnClick : MonoBehaviour
                 break;
             case "Music":
                 slash = this.gameObject.transform.GetChild(0).gameObject;
-                Holders.IsMusicEnable = !slash.active;
-                slash.SetActive(Holders.IsMusicEnable);
+                Holders.IsMusicEnable = !Holders.IsMusicEnable;
+                slash.SetActive(!Holders.IsMusicEnable);
                 Holders.SaveString("MusicEnable", Holders.IsMusicEnable.ToString());
                 break;
             case "Sound":
                 slash = this.gameObject.transform.GetChild(0).gameObject;
-                Holders.IsSoundEnable = !slash.active;
-                slash.SetActive(Holders.IsSoundEnable);
+                Holders.IsSoundEnable = !Holders.IsSoundEnable;
+                slash.SetActive(!Holders.IsSoundEnable);
                 Holders.SaveString("SoundEnable", Holders.IsSoundEnable.ToString());
                 break;
             default:

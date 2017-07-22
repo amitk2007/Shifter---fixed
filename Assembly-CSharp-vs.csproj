@@ -46,12 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AdsScripts\AdManager.cs" />
-     <Compile Include="Assets\Scripts\AdsScripts\EndGame.cs" />
      <Compile Include="Assets\Scripts\AdsScripts\PreLoaderScript.cs" />
-     <Compile Include="Assets\Scripts\AdsScripts\game.cs" />
      <Compile Include="Assets\Scripts\GameScripts\ApplyMode.cs" />
-     <Compile Include="Assets\Scripts\GameScripts\GameAdsScript.cs" />
      <Compile Include="Assets\Scripts\GameScripts\TouchScript.cs" />
      <Compile Include="Assets\Scripts\GameScripts\obstacleScript.cs" />
      <Compile Include="Assets\Scripts\GameScripts\playerScript.cs" />
@@ -64,7 +60,6 @@
      <Compile Include="Assets\Scripts\MenusScripts\PlayerHightScore.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\Settings\ModeScript.cs" />
      <Compile Include="Assets\Scripts\MenusScripts\Settings\SettingScript.cs" />
-     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -77,10 +72,6 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{F09FF528-26D3-36CC-4D4B-3AFAE510428A}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,14 +6,14 @@ public class ModeScript : MonoBehaviour
 {
 
     public string ModeName;
-    public static string[] modes = new string[3] { "Classic", "OutLine", "8Bit" };
+    public static string[] modes = new string[] { "Classic" };//, "OutLine", "8Bit" };
     public int modeIndex = 0;
     public GameObject modeText;
 
     //ModesLock stuff
     public GameObject LockModeText;
     public GameObject ModeApplayButton;
-    public static int[] ModeLockScores = new int[3] { 0, 10, 20 };
+    public static int[] ModeLockScores = new int[] { 0 };//, 10, 20 };
 
     // Use this for initialization
     void Start()

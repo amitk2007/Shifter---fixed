@@ -46,8 +46,6 @@ public class obstacleScript : MonoBehaviour
             }
             else
             {
-                AdManager.Instance.ShowVideo();
-                AdManager.Instance.RemoveBunner();
                 Application.LoadLevel(Holders.Menus[4]);
             }
         }

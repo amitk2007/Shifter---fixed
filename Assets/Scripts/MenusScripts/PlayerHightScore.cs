@@ -23,6 +23,8 @@ public class PlayerHightScore : MonoBehaviour {
 		Holders.HightScore = Mathf.Max(Holders.HightScore,score);
 		Holders.SaveInt ("highscore",Holders.HightScore);
 		HighPointsText.GetComponent<Text> ().text = Holders.HightScore.ToString();
+
+        score = 0;
 	}
 	
 	// Update is called once per frame
