@@ -11,6 +11,8 @@ public class playerScript : MonoBehaviour
     public GUISkin theSkin;
     public static int SpriteNumber = 0;
     public static int playerScore = 0;
+
+    public static Animator animator;
     #endregion
 
     void Start()
@@ -18,6 +20,7 @@ public class playerScript : MonoBehaviour
         points = 0;
         SpritsArray = playerSprits;
         this.gameObject.GetComponent<SpriteRenderer>().sprite = SpritsArray[0];
+        animator = GetComponent<Animator>();
     }
 
     void OnGUI()
@@ -63,4 +66,9 @@ public class playerScript : MonoBehaviour
         //return 30;
     }
     #endregion
+
+    public static void ChangeAnimation()
+    {
+        animator.SetTrigger("next");
+    }
 }

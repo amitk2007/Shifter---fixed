@@ -34,6 +34,7 @@ public class ApplyMode : MonoBehaviour
 
     Sprite GetSprite(string name)
     {
+        print(Holders.CorrendTextureMode);
         string path = "Modes/" + Holders.CorrendTextureMode + "/" + name;
         Sprite spt = (Sprite)Resources.Load(path, typeof(Sprite));
         return spt;

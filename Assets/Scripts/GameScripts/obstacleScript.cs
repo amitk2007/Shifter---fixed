@@ -15,8 +15,8 @@ public class obstacleScript : MonoBehaviour
     float points = 0;
     #endregion
     #region arrays
-    public Sprite[] obstacleSprites = new Sprite[4];
-    public Color[] obstacleColor = new Color[4];
+    public Sprite[] obstacleSprites;
+    public Color[] obstacleColor;
     string[] playersSkinsNames = new string[4] { "first", "second", "third", "forth" };
     #endregion
     #endregion
@@ -38,7 +38,7 @@ public class obstacleScript : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             string playerSpriteName = player.gameObject.GetComponent<SpriteRenderer>().sprite.name;
-            if (playerSpriteName.Equals(playersSkinsNames[obstacleSpriteNumber]))
+            if (playerSpriteName.Contains(playersSkinsNames[obstacleSpriteNumber]))
             {
                 player.SendMessage("AddOneToPlayerScore");
                 points++;
